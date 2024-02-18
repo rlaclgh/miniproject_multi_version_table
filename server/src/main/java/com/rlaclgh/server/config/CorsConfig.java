@@ -16,7 +16,7 @@ public class CorsConfig {
     CorsConfiguration configuration = new CorsConfiguration();
 
     configuration.setAllowedOrigins(List.of("http://127.0.0.1:3000"));
-    configuration.setAllowedMethods(Arrays.asList("GET", "POST", "OPTIONS"));
+    configuration.setAllowedMethods(Arrays.asList("GET", "POST", "OPTIONS", "PATCH"));
     configuration.setAllowedHeaders(List.of("*"));
     UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
     source.registerCorsConfiguration("/**", configuration);

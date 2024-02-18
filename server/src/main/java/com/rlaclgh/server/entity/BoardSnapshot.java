@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,8 +28,6 @@ public class BoardSnapshot extends BaseEntity{
   @Column
   private String title;
 
-
-
   @Column
   private String description;
 
@@ -36,6 +35,9 @@ public class BoardSnapshot extends BaseEntity{
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "board_id")
   private Board board;
+
+  @OneToOne(mappedBy = "boardSnapshot", fetch = FetchType.LAZY)
+  private BoardLastSnapshot boardLastSnapshot;
 
   public BoardSnapshot(String title, String description, Board board) {
     this.title = title;

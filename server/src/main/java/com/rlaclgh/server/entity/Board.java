@@ -29,13 +29,12 @@ public class Board extends BaseEntity{
   @Column
   private String writer;
 
-
   @JsonIgnore
   @OneToMany(mappedBy = "board", fetch = FetchType.LAZY)
   List<BoardSnapshot> boardSnapshots = new ArrayList<>();
 
   @OneToOne(mappedBy = "board", fetch = FetchType.EAGER)
-  BoardLastSnapshot boardLastSnapshot;
+  private BoardLastSnapshot boardLastSnapshot;
 
   public Board(String writer) {
     this.writer = writer;

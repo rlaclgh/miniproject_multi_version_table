@@ -28,9 +28,6 @@ public class BoardLastSnapshot {
   @JoinColumn(name = "board_id", unique = true)
   private Board board;
 
-
-
-  @JsonIgnore
   @OneToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "board_snapshot_id")
   private BoardSnapshot boardSnapshot;
