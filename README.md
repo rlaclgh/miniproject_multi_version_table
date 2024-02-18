@@ -8,13 +8,15 @@
 ## 실행결과
 
 1. erd
+ <br/>
+   <img width="600px" alt="miniproject_multi_version_table_erd" src="https://github.com/rlaclgh/miniproject_multi_version_table/assets/46914232/050708be-be51-483c-806e-edebc2b1993a">
  <br/>  
-   <img width="600px" alt="miniproject_multi_version_table_erd" src="https://github.com/rlaclgh/miniproject_multi_version_table/assets/46914232/050708be-be51-483c-806e-edebc2b1993a">   
-<br/>
+   
 2. 실행 gif
 <br/>
    <img width="600px" src="https://github.com/rlaclgh/miniproject_multi_version_table/assets/46914232/b2bd7ff4-5ea4-445e-bc18-c3dd1f07b3e6">   
 <br/>
+
 ## 실행방법
 
 ```
